@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="listpage" prefHeight="489.0" prefWidth="1058.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoecole.ListedesclientsController">
+   <children>
+      <TableView fx:id="clientlist" layoutY="96.0" prefHeight="301.0" prefWidth="1058.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="44.000001311302185" />
+            <TableColumn fx:id="iu" prefWidth="132.66662979125977" text="IDENTIFIANT UNIQUE" />
+          <TableColumn fx:id="idcard" prefWidth="124.66665649414062" text="NUMERO DE CARTE" />
+          <TableColumn fx:id="name" prefWidth="112.6666259765625" text="NOM CLIENT" />
+            <TableColumn fx:id="birthdate" minWidth="0.0" prefWidth="131.33340454101562" text="DATE DE NAISSANCE" />
+            <TableColumn fx:id="birthplace" minWidth="3.33331298828125" prefWidth="149.99993896484375" text="LIEU DE NAISSANCE" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="125.99993896484375" text="ADDRESSE E-MAIL" />
+            <TableColumn fx:id="phone" prefWidth="122.0" text="TELEPHONE" />
+            <TableColumn fx:id="address" prefWidth="194.00006103515625" text="ADRESSE DE RESIDENCE" />
+        </columns>
+      </TableView>
+      <Button fx:id="addclient" layoutX="516.0" layoutY="45.0" mnemonicParsing="false" onAction="#btnaddclient" prefHeight="25.0" prefWidth="200.0" text="AJOUTEZ CLIENT" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="corn" layoutX="115.0" layoutY="45.0" onAction="#btncorn" prefHeight="25.0" prefWidth="200.0" promptText="CHOISISSEZ SESSION" />
+      <Label fx:id="print" layoutX="115.0" layoutY="14.0" prefHeight="17.0" prefWidth="313.0" text="." textFill="#df0b0b">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="save" layoutX="352.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnsave" prefHeight="42.0" prefWidth="154.0" text="SAUVEGARDER" />
+      <Button fx:id="finance" layoutX="916.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnfinance" prefHeight="64.0" prefWidth="125.0" text="FINANCE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="home" mnemonicParsing="false" onAction="#btnhome" text="&lt;&lt;ACCUEIL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

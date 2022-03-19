@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import ValidateTextfield.custom.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autoecole.CustomerinfoController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="1.0" layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b6dcff" height="64.0" layoutX="-1.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" width="602.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd2d2" height="313.0" layoutX="-1.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="602.0" />
+            <Label alignment="CENTER" layoutX="166.0" layoutY="43.0" prefHeight="34.0" prefWidth="335.0" text="INFORMATION DU CLIENT">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="132.0" prefHeight="15.0" prefWidth="147.0" text="NOM DU CLIENT             ">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="99.0" prefHeight="15.0" prefWidth="196.0" text="NUMERO DE CARTE D'IDENTITE   ">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="165.0" prefHeight="15.0" prefWidth="147.0" text="DATE DE NAISSANCE     ">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="200.0" prefHeight="15.0" prefWidth="147.0" text="LIEU DE NAISSANCE      ">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submit" layoutX="274.0" layoutY="339.0" mnemonicParsing="false" onAction="#btnsubmit" prefHeight="34.0" prefWidth="126.0" text="ENREGISTRER">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="print" layoutX="140.0" layoutY="26.0" prefHeight="17.0" prefWidth="327.0" text="." textFill="#ec0c0c">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="261.0" prefHeight="34.0" prefWidth="147.0" text="NUMERO DE TELEPHONE">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="295.0" prefHeight="34.0" prefWidth="147.0" text="ADDRESSE DE RESIDENCE">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="227.0" prefHeight="34.0" prefWidth="147.0" text="ADRESSE E-MAIL">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cid" layoutX="232.0" layoutY="94.0" prefHeight="25.0" prefWidth="210.0" />
+            <TextField fx:id="cname" layoutX="232.0" layoutY="127.0" prefHeight="25.0" prefWidth="210.0" />
+            <TextField fx:id="cbl" layoutX="232.0" layoutY="195.0" prefHeight="25.0" prefWidth="210.0" />
+            <TextField fx:id="cam" layoutX="232.0" layoutY="231.0" prefHeight="25.0" prefWidth="210.0" />
+            <NumberTextField fx:id="cnt" layoutX="232.0" layoutY="265.0" prefHeight="25.0" prefWidth="210.0" />
+            <TextField fx:id="car" layoutX="232.0" layoutY="299.0" prefHeight="25.0" prefWidth="210.0" />
+            <DatePicker fx:id="cbdate" layoutX="232.0" layoutY="160.0" prefHeight="25.0" prefWidth="210.0" />
+            <Label fx:id="session" alignment="CENTER" layoutX="474.0" layoutY="214.0" prefHeight="25.0" prefWidth="112.0" text=".">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="191.0" text="SESSION DE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="retour" layoutY="25.0" mnemonicParsing="false" onAction="#btnretour" text="RETOUR" />
+         </children>
+      </AnchorPane>
+      <MenuBar prefHeight="25.0" prefWidth="601.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="close" mnemonicParsing="false" onAction="#btnclose" text="Close APP" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View_Orders">
+               <items>
+                  <MenuItem fx:id="CustemerOders" mnemonicParsing="false" onAction="#btncusor" text="Customer`s Oders" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
